@@ -1,4 +1,7 @@
 # MCStatusBot Docs
+
+> these docs are still a work in progress so some information might be missing or wrong
+
 [![Discord Bot status](https://top.gg/api/widget/status/816747912888975362.svg)](https://top.gg/bot/816747912888975362) [![Discord Bots](https://top.gg/api/widget/servers/816747912888975362.svg)](https://top.gg/bot/816747912888975362) [![License: MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](/LICENSE) ![node-current](https://img.shields.io/node/v/discord.js)
 [![Discord](https://img.shields.io/discord/892122095235006485?color=blue&label=Discord%20server&logo=discord)](https://mcstatusbot.site/discord?ref=readme) [![donate](https://img.shields.io/badge/Liberapay-donate-green?logo=liberapay)](https://liberapay.com/invaliduser/donate)
 
