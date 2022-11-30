@@ -1,7 +1,7 @@
 site_name: MC Status Bot Docs
 
 theme:
-  name: gitbook
+  name: readthedocs
 
 markdown_extensions:
   - footnotes
