@@ -33,4 +33,4 @@ you will need the `manage server` permission to invite the bot and run these com
 
 ## Contact
 
-encounter a problem or just find something too complicated? don't hesitate to contact me via email `help@mcstatusbot.site` or in [the discord server](https://mcstatusbot.site/discord?ref=bot-readme)
+encounter a problem or just find something too complicated? don`t hesitate to contact me via email `help@mcstatusbot.site` or in [the discord server](https://mcstatusbot.site/discord?ref=bot-readme)
