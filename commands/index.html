@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Commands - MC Status Bot Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Commands";
+        var mkdocs_page_input_path = "commands.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> MC Status Bot Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">MCStatusBot Docs</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Commands</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#add-mc-server">/add-mc-server</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#link-mc-server">/link-mc-server</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#parameters_1">Parameters</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#my-mc-servers">/my-mc-servers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#discord-server-info">/discord-server-info</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#enable-message-status">/enable-message-status</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#parameters_2">Parameters</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#enable-channel-status">/enable-channel-status</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-language">/set-language</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#parameters_3">Parameters</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#chart">/chart</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#parameters_4">Parameters</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">faq</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tz/">TimeZones</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">MC Status Bot Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Commands</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h1>
+<h2 id="add-mc-server">/add-mc-server<a class="headerlink" href="#add-mc-server" title="Permanent link">&para;</a></h2>
+<p>Adds a Minecraft server to the bot and gives you a id/code so you may add it to up to 10 discord servers, if discord server you are doing this command in doesn`t already have a Minecraft server added this one will be added and set as the default server.</p>
+<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ip</td>
+<td>true</td>
+<td>Your minecraft servers ip.</td>
+</tr>
+<tr>
+<td>port</td>
+<td>true</td>
+<td>Your minecraft servers port.</td>
+</tr>
+<tr>
+<td>domain</td>
+<td>false</td>
+<td>Your minecraft servers domain.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>true</td>
+<td>The name of your minecraft server this wll show up in server lists on the website and status channels/messages.</td>
+</tr>
+<tr>
+<td>server-type</td>
+<td>true</td>
+<td>Weather or not this server is a bedrock server or java server.</td>
+</tr>
+<tr>
+<td>private</td>
+<td>true</td>
+<td>If set to yes your minecraft server wont appear in any server lists and can only be added to discord servers by you.</td>
+</tr>
+<tr>
+<td>timezone</td>
+<td>true</td>
+<td>The timezone code of your server see <a href="/#timezones">TimeZones</a> for a list of timezone codes.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="link-mc-server">/link-mc-server<a class="headerlink" href="#link-mc-server" title="Permanent link">&para;</a></h2>
+<p>Links your Minecraft server to the discord server you are running this command in.</p>
+<h3 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>true</td>
+<td>Your minecraft servrs id that was given to you when you added it you can also find this id with the <code>/my-mc-servers</code> command and on the <a href="https://dash.mcstatusbot.site/my-mc-servers">dashboard</a>.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="my-mc-servers">/my-mc-servers<a class="headerlink" href="#my-mc-servers" title="Permanent link">&para;</a></h2>
+<p>Lists your added Minecraft servers and their ids.</p>
+<p><br></p>
+<h2 id="discord-server-info">/discord-server-info<a class="headerlink" href="#discord-server-info" title="Permanent link">&para;</a></h2>
+<p>Gets information on your discord server. default minecraft server, added mc servers and more.</p>
+<p><br></p>
+<h2 id="enable-message-status">/enable-message-status<a class="headerlink" href="#enable-message-status" title="Permanent link">&para;</a></h2>
+<p>Enables an auto updating Minecraft server status embed in your selected channel</p>
+<h3 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mc-server-id</td>
+<td>true</td>
+<td>The id of the minecraft server you would like to enable the message status for.</td>
+</tr>
+<tr>
+<td>channel</td>
+<td>true</td>
+<td>The channel you would like the status embed to be sent in either at the channel by typing <code>#channel-name</code> or by giving it`s id.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="enable-channel-status">/enable-channel-status<a class="headerlink" href="#enable-channel-status" title="Permanent link">&para;</a></h2>
+<p>Enables an auto updating channel status </p>
+<p><br></p>
+<h2 id="set-language">/set-language<a class="headerlink" href="#set-language" title="Permanent link">&para;</a></h2>
+<p>Set your language </p>
+<h3 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lang</td>
+<td>true</td>
+<td>The language code.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="chart">/chart<a class="headerlink" href="#chart" title="Permanent link">&para;</a></h2>
+<p>Get a chart of your minecraft servers statistics</p>
+<h3 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chart-type</td>
+<td>true</td>
+<td>The type of chart you would like to see.</td>
+</tr>
+<tr>
+<td>mc-server</td>
+<td>false</td>
+<td>The id ip:port or domain of the minecraft server.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="MCStatusBot Docs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../faq/" class="btn btn-neutral float-right" title="faq">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../faq/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
