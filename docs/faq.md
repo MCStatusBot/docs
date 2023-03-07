@@ -1,13 +1,19 @@
 # faq
 
-## how many minecraft servers can i have on my account
-A: A maximum of 10 ten servers can be added to your account, more might be added on request so join the support server and ask.
+## how many minecraft servers can i have on my account?
+A: Depending on your plan anything from x to y you can see the amount by doing `/discord-server overview`
 
-## how many minecraft servers can i link to my dscord server
-A: A maximum of 5 five servers can be added to your discord server, more might be added on request so join the support server and ask.
+## how many minecraft servers can i link to my dscord server?
+A: Depending on your plan anything from x to y you can see the amount by doing `/discord-server overview`
 
-## how many Channel status can i have at one time
-A: A maximum of 2 two can be added to your discord server, more might be added on request so join the support server and ask. This is to try and prevent us getting rate limited by discord
+## how many Channel status can i have at one time?
+A: Depending on your plan anything from x to y you can see the amount by doing `/discord-server overview` 
 
-## how many message status can i have at one time
-A: The same ammount of minecraft servers that have been assigne to your server you can see this by doing `/server-info` or seeing on the [dashboard](https://dash.mcstatusbot.site)
+## how many message status can i have at one time?
+A: Depending on your plan anything from x to y you can see the amount by doing `/discord-server overview`
+
+## what is a channel or message watcher?
+A: a channel watcher and message watcher is the name i give to the auto updating channel status and message status.
+
+## how do i increase my minecraft server and or watcher limit?
+A: you can see a list of plans at https://store.mcstatusbot.site or ask in our support server we have gift code give aways all the time.
