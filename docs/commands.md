@@ -1,20 +1,43 @@
 # Commands
 
-## /add-mc-server
-Adds a Minecraft server to the bot and gives you a id/code so you may add it to up to 10 discord servers, if discord server you are doing this command in doesn`t already have a Minecraft server added this one will be added and set as the default server.
+## /setup
+Basically does what /minecraft-server add does but automatically adds the mc server to your discord server.
 
-### Parameters
+#### Parameters
 
 Parameter | Required | Description
 --------- | --------- | -----------
-ip | true | Your minecraft servers ip.
-port | true | Your minecraft servers port.
-domain | false | Your minecraft servers domain.
-name | true | The name of your minecraft server this wll show up in server lists on the website and status channels/messages.
-server-type | true | Weather or not this server is a bedrock server or java server.
-private | true | If set to yes your minecraft server wont appear in any server lists and can only be added to discord servers by you.
-timezone | true | The timezone code of your server see [TimeZones](/#timezones) for a list of timezone codes.
 
+<br>
+
+## /minecraft-server
+
+### add
+Adds a Minecraft server to the bot and gives you a id/code so you may add it to up to 10 discord servers, if discord server you are doing this command in doesn`t already have a Minecraft server added this one will be added and set as the default server.
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+
+
+### view
+view the details for a minecraft server
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+id | true | Your minecraft servers id.
+
+
+### list
+list all your minecraft server
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
 
 
 <br>
@@ -22,48 +45,64 @@ timezone | true | The timezone code of your server see [TimeZones](/#timezones) 
 ## /link-mc-server
 Links your Minecraft server to the discord server you are running this command in.
 
-### Parameters
+#### Parameters
 
 Parameter | Required | Description
 --------- | --------- | -----------
-id | true | Your minecraft servrs id that was given to you when you added it you can also find this id with the `/my-mc-servers` command and on the [dashboard](https://dash.mcstatusbot.site/my-mc-servers).
-
-
+id | true | Your minecraft servers id that was given to you when you added it you can also find this id with the `/my-mc-servers` command and on the [dashboard](https://dash.mcstatusbot.site/my-mc-servers).
 
 <br>
 
-## /my-mc-servers
-Lists your added Minecraft servers and their ids.
+## /channel-status
+setup or disable channel status for a minecraft server
 
 
 
-<br>
+### enable
+enables channel status
 
-## /discord-server-info
-
-Gets information on your discord server. default minecraft server, added mc servers and more.
-
-
-
-<br>
-
-## /enable-message-status
-Enables an auto updating Minecraft server status embed in your selected channel
-
-### Parameters
+#### Parameters
 
 Parameter | Required | Description
 --------- | --------- | -----------
-mc-server-id | true | The id of the minecraft server you would like to enable the message status for.
-channel | true | The channel you would like the status embed to be sent in either at the channel by typing `#channel-name` or by giving it`s id.
+id | true | Your minecraft servers id that was given to you when you added it you can also find this id with the `/my-mc-servers` command and on the [dashboard](https://dash.mcstatusbot.site/my-mc-servers).
+enable-playersonline | true | should we have another channel display how many players are online
 
+### disable
+disables channel status
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+id | true | Your minecraft servers id that was given to you when you added it you can also find this id with the `/my-mc-servers` command and on the [dashboard](https://dash.mcstatusbot.site/my-mc-servers).
 
 
 <br>
 
-## /enable-channel-status
+## /message-status
+setup or disable message status for a minecraft server
 
-Enables an auto updating channel status 
+
+
+### enable
+enables message status
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+id | true | Your minecraft servers id that was given to you when you added it you can also find this id with the `/my-mc-servers` command and on the [dashboard](https://dash.mcstatusbot.site/my-mc-servers).
+channel | true | the channel where you want the message to be sent
+
+### disable
+disables message status
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+id | true | Your minecraft servers id that was given to you when you added it you can also find this id with the `/my-mc-servers` command and on the [dashboard](https://dash.mcstatusbot.site/my-mc-servers).
 
 
 <br>
@@ -72,11 +111,11 @@ Enables an auto updating channel status
 
 Set your language 
 
-### Parameters
+#### Parameters
 
 Parameter | Required | Description
 --------- | --------- | -----------
-lang | true | The language code.
+lang | true | The language code see https://docs.mcstatus/lang for codes.
 
 
 <br>
@@ -85,9 +124,82 @@ lang | true | The language code.
 
 Get a chart of your minecraft servers statistics
 
-### Parameters
+
+### uptime
+see a custom graph of a mcservers uptime over time
+
+#### Parameters
 
 Parameter | Required | Description
 --------- | --------- | -----------
-chart-type | true | The type of chart you would like to see.
-mc-server | false | The id ip:port or domain of the minecraft server.
+id | false | Your minecraft servers id domain or ip:port, if you dont give one it will use the discord servers default mc server.
+
+
+### playersonline
+see a custom graph of playersonline over time
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+id | false | Your minecraft servers id domain or ip:port, if you dont give one it will use the discord servers default mc server.
+
+### mostactive
+see a custom graph of the most active players.
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+id | false | Your minecraft servers id domain or ip:port, if you dont give one it will use the discord servers default mc server.
+
+
+<br>
+
+## /discord-server
+
+### settings
+see all your current settings for things todo with your discord server
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+
+### edit-chart-grap
+edit your charts graph colours
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+
+### edit-embed-uptime
+edit your uptime embed
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+
+### edit-embed-playersonline
+edit your playersonline embed
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+
+### edit-embed-mostactive
+edit your mostactive embed
+
+#### Parameters
+
+Parameter | Required | Description
+--------- | --------- | -----------
+
+<br>
+
+## /cool-stats
+
+Get cool stats of the bot uptime cpu ram, last ping details etc
