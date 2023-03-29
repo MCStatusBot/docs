@@ -2,6 +2,8 @@
 
 here is a list of timezone codes that you can use
 
+press `ctrl + F` to search
+
 <br>
 
 `Africa/Abidjan`
