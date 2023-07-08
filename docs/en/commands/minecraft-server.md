@@ -7,7 +7,7 @@ The `/minecraft-server add` command is used to add a new Minecraft server to the
 
 To use this command, type `/minecraft-server add` and wait for the form to show up. If you don't receive a form, you will need to update your Discord client. The form contains the following fields (names ending with * are required):
 
- - "YOUR SERVER'S IP"* - This is the IP address that you and your members use to connect to your server. It can look like 199.249.5.44, snekmc.schost.us, or 152.160.146.194:25567 (note that the number after the : is your server's port).
+ - "YOUR SERVER'S IP"* - This is the IP address or domain that you and your members use to connect to your server. It can look like 152.160.146.196, snekmc.schost.us, or 152.160.146.194:25567 (note that the number after the : is your server's port).
 
  - "YOUR SERVER'S ALT IPS" - These are alternative IP addresses/domains your server may have, separated by a comma (,) or space. For example, the address you would use to connect to my server, SnekMC, is snekmc.schost.us, but you can also connect to it using 152.160.146.198, so I would enter that here. This field is required to prevent others from accidentally duplicating your server.
 
@@ -27,7 +27,7 @@ If you think someone is trying to impersonate your server, please report it.
 
 ### Common errors:
  - Minecraft Server Exists
-   - This server has already been added. To verify that you own it, type `/minecraft-server view` and use the IP or ID of the server, and see if the username under owner is yours. If not, don't worry - see [recover my Minecraft server].
+   - This server has already been added. To verify that you own it, type `/minecraft-server view` and use the IP or ID of the server, and see if the username under owner is yours. If not, don't worry - see [recover my Minecraft server]().
 <br>
 
 

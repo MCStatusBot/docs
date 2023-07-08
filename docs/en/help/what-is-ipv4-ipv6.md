@@ -1,0 +1,5 @@
+#  What is IPv4 and IPv6?
+
+**IPv4** is a version of the Internet Protocol that helps identify and locate devices on the internet. It uses a numbering system with four sets of numbers (like 152.160.146.196) to assign unique addresses to devices. However, the number of these addresses is limited, and we're running out of them. As a solution, we have **IPv6**, which is a newer version of the Internet Protocol developed to solve the address shortage problem. IPv6 uses a different numbering system with eight groups of numbers and letters (like 2001:0db8:85a3:0000:0000:8a2e:0370:7334) and provides a significantly larger number of unique addresses. With IPv6, many more devices can connect to the internet without running out of addresses.
+
+Currently, McStatusbot has not been tested or designed to work with IPv6, and most of the internet still relies on IPv4. Therefore, in my opinion, it is still necessary for your Minecraft server to be accessible through IPv4 for other members.
