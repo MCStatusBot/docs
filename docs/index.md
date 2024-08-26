@@ -33,7 +33,9 @@ your first mc server will be automatically linked to the discord server.
 
 And that's it! You're now ready to use the Mc Status Bot to keep track of your Minecraft server's status right from your Discord server
 
-if you would like to add more servers please see [Adding more mc Servers to my discord server]
+if you would like to add more servers please see [How To Link More Mc Servers To My Discord Server](en/guides/How%20To%20Link%20More%20Mc%20Servers%20To%20My%20Discord%20Server/)
+
+
 
 ## Quick Links
 
