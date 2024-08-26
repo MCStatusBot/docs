@@ -6,7 +6,8 @@
 [![Discord](https://img.shields.io/discord/892122095235006485?color=blue&label=Discord%20server&logo=discord)](https://mcstatus.net/discord?ref=readme) [![donate](https://img.shields.io/badge/Liberapay-donate-green?logo=liberapay)](https://liberapay.com/invaliduser/donate)
 
 !!! note
- these docs are still a work in progress so some information might be missing or wrong
+
+  these docs are still a work in progress so some information might be missing or wrong
 
 <br>
 
