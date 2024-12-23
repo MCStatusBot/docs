@@ -2,7 +2,7 @@
 
 ## A Discord bot that will display, log and graph the status and statistics of a Minecraft server.
 
- [![License: MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](/LICENSE) ![node-current](https://img.shields.io/node/v/discord.js)
+ ![node-current](https://img.shields.io/node/v/discord.js)
 [![Discord](https://img.shields.io/discord/892122095235006485?color=blue&label=Discord%20server&logo=discord)](https://mcstatus.net/discord?ref=readme) [![donate](https://img.shields.io/badge/Liberapay-donate-green?logo=liberapay)](https://liberapay.com/invaliduser/donate)
 
 !!! note
