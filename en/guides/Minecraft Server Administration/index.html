@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Minecraft Server Administration - MC Status Docs</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Minecraft Server Administration";
+        var mkdocs_page_input_path = "en/guides/Minecraft Server Administration.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> MC Status Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">MCStatusBot Docs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../tz/">TimeZones</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">En</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../commands/">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../errors/">Errors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/">faq</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../privacy-policy/">Privacy Policy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../text-params/">text params</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Deletion</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data%20Deletion/How%20To%20Delete%20Your%20Data/">How To Delete Your Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Commands</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../commands/chart/">/chart</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../commands/discord-server/">/discord-server</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../commands/ip/">/ip</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../commands/minecraft-news/">/minecraft-news</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../commands/minecraft-server/">/minecraft-server</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../commands/ping/">/ping</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../commands/user/">/user</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Guides</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../How%20To%20Link%20More%20Mc%20Servers%20To%20My%20Discord%20Server/">How To Link More Mc Servers To My Discord Server</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Minecraft Server Administration</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-add-an-admin-to-your-minecraft-server">How to Add an Admin to Your Minecraft Server</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-view-and-edit-all-admins">How to View and Edit All Admins</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-do-the-permissions-meando">What Do the Permissions Mean/Do?</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../recover%20my%20Minecraft%20server/">recover my Minecraft server</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">MC Status Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">En</li>
+          <li class="breadcrumb-item">Guides</li>
+      <li class="breadcrumb-item active">Minecraft Server Administration</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="minecraft-server-administration">Minecraft Server Administration<a class="headerlink" href="#minecraft-server-administration" title="Permanent link">&para;</a></h1>
+<p>An admin is a user who has permission to manage your Minecraft server. For example, if you give your friend op status on your Minecraft server, you would also add them as an admin. You can add up to 25 admins to your Minecraft server.</p>
+<h2 id="how-to-add-an-admin-to-your-minecraft-server">How to Add an Admin to Your Minecraft Server<a class="headerlink" href="#how-to-add-an-admin-to-your-minecraft-server" title="Permanent link">&para;</a></h2>
+<p>To add an admin, use the /minecraft-server add-admin command. Enter the IP or ID of the server after mcserver-id, and mention the user you want to add as an admin after user. Here's an example:</p>
+<h2 id="how-to-view-and-edit-all-admins">How to View and Edit All Admins<a class="headerlink" href="#how-to-view-and-edit-all-admins" title="Permanent link">&para;</a></h2>
+<p>To view all admins on your server, use the /minecraft-server view command with the server's IP or ID. Then, click the "View Admins" button. Your message will change to show a dropdown menu that lets you select different admins. To toggle their permissions on or off, simply click the button.</p>
+<h2 id="what-do-the-permissions-meando">What Do the Permissions Mean/Do?<a class="headerlink" href="#what-do-the-permissions-meando" title="Permanent link">&para;</a></h2>
+<p>Here are the permissions that can be granted to admins and what they allow:</p>
+<p><code>LINK_MINECRAFTSERVER_TO_GUILD</code>: Allows admins to link your Minecraft server to Discord servers, even if it's private.</p>
+<p><code>EDIT_MINECRAFTSERVER_ADMINS</code>: Allows admins to add, delete, and grant/remove permissions to other admins. This is similar to the "owner" or "manage roles" permission on a Discord server.</p>
+<p><code>EDIT_MINECRAFTSERVER_MAINGUILD</code>: Allows admins to edit the Minecraft server's official/main Discord server.</p>
+<p><code>EDIT_MINECRAFTSERVER_NAME</code>: Allows admins to edit the name of your Minecraft server.</p>
+<p><code>EDIT_MINECRAFTSERVER_DESCRIPTION</code>: Allows admins to edit the description of your Minecraft server.</p>
+<p><code>DELETE_MINECRAFTSERVER_LOGS</code>: Allows admins to delete logs on your Minecraft server.</p>
+<p><code>SET_MINECRAFTSERVER_PRIVATE</code>: Allows admins to toggle your Minecraft server to private or public.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../How%20To%20Link%20More%20Mc%20Servers%20To%20My%20Discord%20Server/" class="btn btn-neutral float-left" title="How To Link More Mc Servers To My Discord Server"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../recover%20my%20Minecraft%20server/" class="btn btn-neutral float-right" title="recover my Minecraft server">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../How%20To%20Link%20More%20Mc%20Servers%20To%20My%20Discord%20Server/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../recover%20my%20Minecraft%20server/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

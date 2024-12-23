@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>/discord-server - MC Status Docs</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "/discord-server";
+        var mkdocs_page_input_path = "en/commands/discord-server.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> MC Status Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">MCStatusBot Docs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../tz/">TimeZones</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">En</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Commands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../errors/">Errors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/">faq</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../privacy-policy/">Privacy Policy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../text-params/">text params</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Deletion</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Data%20Deletion/How%20To%20Delete%20Your%20Data/">How To Delete Your Data</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Commands</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../chart/">/chart</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">/discord-server</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#discord-server-overview">/discord-server overview</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#basics">Basics</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#status-embed">Status Embed</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#graph-colors">Graph Colors</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#chart-uptime-embed-chart-playersonline-embed-chart-mostactive-embed">Chart uptime Embed, Chart playersonline Embed, Chart mostactive Embed</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#discord-server-link-mcserver">/discord-server link-mcserver</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#discord-server-remove-mcserver">/discord-server remove-mcserver</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#discord-server-create-channel-watcher">/discord-server create-channel-watcher</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#common-errors">Common errors:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#discord-server-remove-channel-watcher">/discord-server remove-channel-watcher</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#discord-server-create-message-watcher">/discord-server create-message-watcher</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#common-errors_1">Common errors:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#discord-server-remove-message-watcher">/discord-server remove-message-watcher</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ip/">/ip</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../minecraft-news/">/minecraft-news</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../minecraft-server/">/minecraft-server</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ping/">/ping</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../user/">/user</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Guides</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../guides/How%20To%20Link%20More%20Mc%20Servers%20To%20My%20Discord%20Server/">How To Link More Mc Servers To My Discord Server</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../guides/Minecraft%20Server%20Administration/">Minecraft Server Administration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../guides/recover%20my%20Minecraft%20server/">recover my Minecraft server</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">MC Status Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">En</li>
+          <li class="breadcrumb-item">Commands</li>
+      <li class="breadcrumb-item active">/discord-server</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="discord-server">/discord-server<a class="headerlink" href="#discord-server" title="Permanent link">&para;</a></h1>
+<p>This command manages your Discord server settings, including creating message and channel watchers and customizing how the bot responds in your server.</p>
+<p><br></p>
+<h2 id="discord-server-overview">/discord-server overview<a class="headerlink" href="#discord-server-overview" title="Permanent link">&para;</a></h2>
+<p>This command gives you an overview of your Discord server settings and allows you to edit them. To use this command, select the "category" option. There are several categories available:</p>
+<h4 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">&para;</a></h4>
+<p>This category shows the number of channel watchers, message watchers, and Minecraft servers you've added to your Discord server. You can also view your current plan, customize the channel watchers' text, and preview it.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090458273909575680/Screenshot_2023-03-29_at_03.11.48.png" /></p>
+<h4 id="status-embed">Status Embed<a class="headerlink" href="#status-embed" title="Permanent link">&para;</a></h4>
+<p>Here, you can see your status embed settings, which appear when someone uses the [/ping] command or when a message watcher is set up.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090459020894163004/Screenshot_2023-03-29_at_03.14.47.png" /></p>
+<h4 id="graph-colors">Graph Colors<a class="headerlink" href="#graph-colors" title="Permanent link">&para;</a></h4>
+<p>This category shows you the hexadecimal color value of the colors of the graph that is displayed under all your chart embeds.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090459439074652181/Screenshot_2023-03-29_at_03.16.26.png" /></p>
+<h4 id="chart-uptime-embed-chart-playersonline-embed-chart-mostactive-embed">Chart uptime Embed, Chart playersonline Embed, Chart mostactive Embed<a class="headerlink" href="#chart-uptime-embed-chart-playersonline-embed-chart-mostactive-embed" title="Permanent link">&para;</a></h4>
+<p>These settings are all similar, except for which chart they affect.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090459920815628308/Screenshot_2023-03-29_at_03.18.21.png" /></p>
+<p><br></p>
+<h2 id="discord-server-link-mcserver">/discord-server link-mcserver<a class="headerlink" href="#discord-server-link-mcserver" title="Permanent link">&para;</a></h2>
+<p>This command links your Minecraft server to your Discord server. It's easy to use. When you use the /minecraft-server add command, the Minecraft server is automatically added to the Discord server where the command was executed. However, let's say you want to see another server's status and details in your Discord server. In that case, you'll need to link it to add a channel or message watcher and display the Minecraft server in a dropdown menu for other commands.</p>
+<p><br></p>
+<h2 id="discord-server-remove-mcserver">/discord-server remove-mcserver<a class="headerlink" href="#discord-server-remove-mcserver" title="Permanent link">&para;</a></h2>
+<p>This command removes the link between your Minecraft server and your Discord server. Please note that this doesn't delete the Minecraft server from the bot. To delete the server completely, use the /minecraft-server view command and then click on the delete button.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090465963813638224/Screenshot_2023-03-29_at_03.42.22.png" /></p>
+<p>To remove a server, select the dropdown menu where it says "Select A Mc Server," then find the name of the Minecraft server you want to remove and click on it.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090466558381392042/Screenshot_2023-03-29_at_03.44.44.png" /></p>
+<p><br></p>
+<h2 id="discord-server-create-channel-watcher">/discord-server create-channel-watcher<a class="headerlink" href="#discord-server-create-channel-watcher" title="Permanent link">&para;</a></h2>
+<p>This command creates a channel watcher that updates its name based on the Minecraft server's status.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090468265521852436/Screenshot_2023-03-29_at_03.51.29.png" /></p>
+<h3 id="common-errors">Common errors:<a class="headerlink" href="#common-errors" title="Permanent link">&para;</a></h3>
+<ul>
+<li>you get a "Can't Create Another Channel watcher" responce, this can be cause if:</li>
+<li>You have already added a channel watcher for each Minecraft server linked to your Discord server.</li>
+<li>You have yet to link a Mnecraft server to your discord server.</li>
+</ul>
+<p><br></p>
+<h2 id="discord-server-remove-channel-watcher">/discord-server remove-channel-watcher<a class="headerlink" href="#discord-server-remove-channel-watcher" title="Permanent link">&para;</a></h2>
+<p>This command removes a channel watcher you have set up. After running the slash command, select the Minecraft server's channel watcher you want to remove using the dropdown menu, and it will attempt to remove the channel.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090601592685854780/Screenshot_2023-03-29_at_12.41.18.png" />
+<img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090601655638163466/Screenshot_2023-03-29_at_12.41.33.png" /></p>
+<p><br></p>
+<h2 id="discord-server-create-message-watcher">/discord-server create-message-watcher<a class="headerlink" href="#discord-server-create-message-watcher" title="Permanent link">&para;</a></h2>
+<p>This command allows you to create a message watcher that will send you messages whenever something specific happens in your Minecraft server. For example, you can receive a message when a player joins or leaves the server, or when the server starts or stops.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090617384076836986/Screenshot_2023-03-29_at_13.44.01.png" /></p>
+<h3 id="common-errors_1">Common errors:<a class="headerlink" href="#common-errors_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>you get a "Can't Create Another Message watcher" responce, this can be cause if:</li>
+<li>You have already added a channel watcher for each Minecraft server linked to your Discord server.</li>
+<li>You have yet to link a Mnecraft server to your discord server.</li>
+</ul>
+<p><br></p>
+<h2 id="discord-server-remove-message-watcher">/discord-server remove-message-watcher<a class="headerlink" href="#discord-server-remove-message-watcher" title="Permanent link">&para;</a></h2>
+<p>This command allows you to remove a message watcher that you have previously set up. You will be asked which Minecraft server's message watcher you would like to remove using the dropdown menu and use it to select from the list of Minecraft servers that have an added message watcher. Once you select one, it will attempt to remove the message watcher and confirm with you.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090601592685854780/Screenshot_2023-03-29_at_12.41.18.png" />
+<img alt="" src="https://cdn.discordapp.com/attachments/1086041829998329856/1090617871203311766/Screenshot_2023-03-29_at_13.45.56.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../chart/" class="btn btn-neutral float-left" title="/chart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ip/" class="btn btn-neutral float-right" title="/ip">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../chart/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ip/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
